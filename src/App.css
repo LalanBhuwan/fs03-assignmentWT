@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dis_flex{
   display: flex;
+}
+
+.nav_container{
+ 
+  width: 100vw;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color:whitesmoke;
+  color: black;
+  padding: 2px 40px;
+}
+
+
+.logo span{
+ 
+  font-weight: 50;
+  
+
+}
+.menu{
+  position: relative;
+  left: 0;
+  right: 0;
+  gap: 2rem;
+  cursor: pointer;
+  
+}
+
+.section_container{
+  background-image: url("./desknotebook.jpg");
+  width: 100vw;
+  height: 30rem;
+  color: white;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-position: center;
+  background-size: cover;
+  
+}
+.section_container > p{
+  margin-top: 1rem;
+}
+.section_container > button{
+  margin-top: 1rem;
+  padding: 10px 15px;
+  border-style: none;
+  border-radius: 15px;
+  background-color: rgb(27, 52, 239);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.direction_cl{
+  
+  flex-direction: column;
+  align-items: center;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.features_about_container{
+  margin-top: 2rem;
+ width: 100vw;
+  justify-content: space-evenly;
+  /* background-color: red; */
+}
+
+
+.icons{
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: rgb(27, 52, 239);
+  color: white;
+  padding: 10px;
+}
+.sectionfeatures_container{
+  width: 100vw;
+}
+.sectionfeatures_container > h5{
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.features_about_container, button,  h6{
+  margin-top: 2rem;
+}
+h6 + span{
+  margin-top: 1rem;
+}
+
+.features_about_container h6{
+  
+  font-size: 0.8rem;
+
+}
+
+.features_about_container span{
+  font-size: 0.7rem;
+  color: rgb(148, 145, 145);
+  
+}
+
+.features_about_container button{
+  border: none;
+  color: rgb(64, 83, 230);
+  background-color: white;
+  font-size: 0.7rem;
+  
+}
+.features_overview{
+ background-image: url("https://www.resumecoach.com/wp-content/uploads/sites/2/2018/06/how-to-include-a-photo-on-your-resume.jpeg");
+  justify-content: space-evenly;
+  align-items: center;
+  height: 15rem;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  margin-top: 2rem;
+
+}
+
+.features_overview:last-child{
+  /* font-weight: 100; */
+}
+.footer_container{
+  /* position: relative; */
+  width: 100vw;
+  height: 20rem;
+  background-color: black;
+  color: white;
+ padding-top: 1rem;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  
+}
+.footer_gallery{
+  /* position: absolute; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+
+.footer_gallery img{
+  width: 5rem;
+  height: 5rem;
+  flex-wrap: wrap;
+}
+.footer_img{
+  /* background-color: red; */
+  width: 21rem;
+  height: rem;
+  justify-content: baseline;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.footer_container span{
+  font-size: 12px;
+  color: darkgrey;
 }
